@@ -2,9 +2,8 @@ requests
 pandas 
 openpyxl
 psycopg2-binary
-streamlit
-plotly
-matplotlib 
 seaborn
 python-dotenv
+plotly
+matplotlib 
 streamlit
