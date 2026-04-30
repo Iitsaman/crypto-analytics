@@ -1,7 +1,7 @@
 import pandas as pd
 from db_conn import get_connection
 
-def export(filename="crypto_da1.xlsx"):
+def export(filename="crypto_data.xlsx"):
     conn = get_connection()
 
     if conn is None:
