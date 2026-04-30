@@ -2,7 +2,7 @@ from api import get_crypto_data
 from save_to_db import save_to_db
 from export_to_excel import export
 import pandas as pd
-#from charts import plot_charts
+from charts import plot_charts
 
 def main():
     print("🚀 Starting Crypto Analytics Project")
@@ -33,7 +33,7 @@ def main():
     )
 
     #  Plot charts 
- #   plot_charts(final_df)
+    plot_charts(final_df)
 
     #   Save to DB
     save_to_db(final_df)
