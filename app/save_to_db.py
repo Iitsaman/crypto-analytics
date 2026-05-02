@@ -1,4 +1,5 @@
 from db_conn import get_connection
+from psycopg2.extras import execute_batch
 
 def save_to_db(df):
     conn = get_connection()
@@ -12,6 +13,7 @@ def save_to_db(df):
     VALUES (%s, %s,%s, %s)
     """
 
+    
     for _, row in df.iterrows():
         cursor.execute(sql, (
             row["coin"],
